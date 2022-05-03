@@ -1,5 +1,6 @@
 package com.yyk.test.user.controller;
 
+import com.yyk.test.user.domain.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -15,7 +16,8 @@ public class UserController { // 고객의 요청에 반응하는 클래스
 
     @RequestMapping("/user")
     @ResponseBody
-    public String user() {
-        return "Person!";
+    public User user() {
+        User user = new User();
+        return user;
     }
 }

@@ -1,9 +1,8 @@
 package com.yyk.test.user.domain;
 
-import javax.persistence.Entity;
 import java.time.LocalDateTime;
 
-@Entity
+// @Entity
 public class User {
     public long id;
     public LocalDateTime regDate;
